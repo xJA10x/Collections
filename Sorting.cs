@@ -32,6 +32,11 @@ How to sort a list
     // One of the ways to sorting a list is to called the sort() method
     // on that list.
 
+  // Searching allows us to find an item in the list before we can retrieve or
+  // remove it.
+  // In order to find items faster in a list,
+  // they list must be sorted.
+
 using System;
 using System.Collections.Generic;
 
@@ -66,6 +71,12 @@ namespace MyProgram {
       Console.WriteLine(students.Count);
       Console.WriteLine(students.Capacity);
 
+      /*
+
+        Declaring list
+
+      */
+
       // Declaring list.
       List<string> studentsTwo = new List<string>(500);
       // Outputs to the console.
@@ -88,6 +99,12 @@ namespace MyProgram {
       // Outputs to the console.
       Console.WriteLine(studentArray);
 
+      /*
+
+        How to insert items in a list.
+
+      */
+
       // Inserts items into the list.
       studentsThree.Insert(1, "Frank");
       // Removes item from the list.
@@ -101,6 +118,12 @@ namespace MyProgram {
 
       }
 
+      /**
+         Using searching.
+      **/
+
+      // Removes item from the list.
+      Console.WriteLine(studentsThree.Remove("Frank"));
 
       // Outputs empty line.
       Console.WriteLine("");
