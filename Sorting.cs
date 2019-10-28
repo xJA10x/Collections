@@ -35,7 +35,7 @@ How to sort a list
   // Searching allows us to find an item in the list before we can retrieve or
   // remove it.
   // In order to find items faster in a list,
-  // they list must be sorted.
+  // the list must be sorted.
 
 using System;
 using System.Collections.Generic;
