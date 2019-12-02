@@ -125,6 +125,10 @@ namespace MyProgram {
       // Removes item from the list.
       Console.WriteLine(studentsThree.Remove("Frank"));
 
+      // Sorts list.
+      studentsThree.Sort();
+      Console.WriteLine(studentsThree);
+
       // Outputs empty line.
       Console.WriteLine("");
       // Outputs to the console.
@@ -136,6 +140,8 @@ namespace MyProgram {
       Console.ReadKey();
 
     }
+
+
 
   }
 
