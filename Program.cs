@@ -40,6 +40,12 @@ namespace MyProgram {
       // Sorts list.
       students.Sort();
 
+      /*
+
+        Using binary search method
+
+      */
+
       // Creates new student.
       Student newStudent = new Student() {
 
