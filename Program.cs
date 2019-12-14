@@ -35,39 +35,26 @@ namespace MyProgram {
 
       };
 
-      // Method call
-      // using object name.
-      // Sorts list.
-      students.Sort();
+      // Builds object from the SchoolRolls class.
+      SchoolRoll schoolRoll = new SchoolRoll();
+      // Method call using object name.
+      // Takes one parameter,
+      // the list of students.
+      schoolRoll.AddStudents(students);
 
-      /*
+      // Removes student.
+      schoolRoll.Students.RemoveAt(0);
+      // Sorts students.
+      schoolRoll.Students.Sort();
 
-        Using binary search method
+      // Adds students.
+      schoolRoll.Students.AddRange(students);
 
-      */
-
-      // Creates new student.
-      Student newStudent = new Student() {
-
-        Name = "Joe",
-        GradeLevel = 2
-
-      };
-
-      // Method call
-      // using binary search.
-      int index = students.BinarySearch(newStudent);
-
-      if(index < 0) {
-
-        // Inserts item into the list.
-        students.Insert(~index, newStudent);
-
-      }
 
       // Outputs students
-      // through each loop iteration.
-      foreach(Student student in students) {
+      // through each loop iteration
+      // by accessing property with object name
+      foreach(Student student in schoolRoll.Students) {
 
         Console.WriteLine($"{student.Name} is a in grade {student.GradeLevel}");
 
