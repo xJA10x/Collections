@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace MyProgram {
 
-  class SchollRoll {
+  class SchoolRoll {
 
-    private List<Student> _students = new List<Student>();
+    private HashSet<Student> _students = new HashSet<Student>();
 
     // Builds property that returns the student list.
     // It only has a getter,
@@ -20,7 +20,7 @@ namespace MyProgram {
 
     public void AddStudents(IEnumerable<Student> students) {
 
-      _students.AddRange(students);
+      _students.UnionWith(students);
 
     }
 

@@ -5,7 +5,7 @@ namespace MyProgram {
 
   class Program {
 
-    public  static void Main(string[] args) {
+    static void Main(string[] args) {
 
       // Builds object from the Students class
       // in order to have access to variables and methods.
@@ -42,15 +42,7 @@ namespace MyProgram {
       // the list of students.
       schoolRoll.AddStudents(students);
 
-      // Removes student.
-      schoolRoll.Students.RemoveAt(0);
-      // Sorts students.
-      schoolRoll.Students.Sort();
-
-      // Adds students.
-      schoolRoll.Students.AddRange(students);
-
-
+      
       // Outputs students
       // through each loop iteration
       // by accessing property with object name

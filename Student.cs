@@ -1,4 +1,6 @@
 
+
+
 namespace MyProgram {
 
   // Class inherits IComparable interface.
